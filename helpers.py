@@ -15,12 +15,12 @@ def _config(key):
         print('--- Main config.json file not found. Exiting.')
         sys.exit()
 
-     config_file = open('config.json')
-     config = config_file.read()
+    config_file = open('config.json')
+    config = config_file.read()
 
-     if not config:
-         print('--- config.json invalid. Exiting.')
-         sys.exit()
+    if not config:
+        print('--- config.json invalid. Exiting.')
+        sys.exit()
 
     config = json.loads(config)
 
